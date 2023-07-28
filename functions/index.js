@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require("path");
 
 const getLogPath = () => {
-    return path.join(path.join(__dirname, '..'), '3xipl-access-persistent.log')
+    return '/var/log/3xipl-access-persistent.log';
 }
 
 const getLastRecord = () => {
