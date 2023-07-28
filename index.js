@@ -19,7 +19,7 @@ setInterval(() => {
 const app = express();
 
 app.get('/get', (req, res) => {
-    return res.send(ips.length);
+    return res.send(ips.length.toString());
 });
 
 
