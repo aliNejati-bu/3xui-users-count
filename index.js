@@ -21,7 +21,7 @@ setInterval(() => {
 const app = express();
 
 app.get('/get', (req, res) => {
-    return res.send({user_online: ips.length.toString()});
+    return res.send({user_online: ips.length});
 });
 
 
