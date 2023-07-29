@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require("path");
 
 const getLogPath = () => {
-    return '/var/log/3xipl-access-persistent.log';
+    return '/usr/local/x-ui/access.log';
 }
 
 const getLastRecord = () => {

@@ -1,10 +1,10 @@
 const express = require('express');
 const configs = require('./config.json');
-const {getActiveWithOutPort, cleanLog} = require("./functions");
+const {getActiveWithOutPort, cleanLog, getActiveWithPort} = require("./functions");
 let ips = [];
 setInterval(() => {
     if (configs.portForce) {
-        getActiveWithOutPort().then((i) => {
+        getActiveWithPort().then((i) => {
             ips = i;
             cleanLog();
         })
