@@ -7,11 +7,14 @@ setInterval(() => {
         getActiveWithPort().then((i) => {
             ips = i;
             cleanLog();
+            console.log(ips);
         })
     } else {
         getActiveWithOutPort().then((i) => {
             ips = i;
             cleanLog();
+            console.log(ips);
+
         });
     }
 }, configs.interval);
