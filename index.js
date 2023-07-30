@@ -14,7 +14,6 @@ setInterval(() => {
             ips = i;
             cleanLog();
             console.log(ips);
-
         });
     }
 }, configs.interval);
@@ -22,7 +21,7 @@ setInterval(() => {
 const app = express();
 
 app.get('/get', (req, res) => {
-    return res.send(ips.length.toString());
+    return res.send({user_online: ips.length});
 });
 
 
