@@ -1,5 +1,6 @@
 {
-  "interval": 60000,
+  "interval": 1000,
   "portForce": true,
-  "appListenOn": 3232
+  "appListenOn": 3232,
+  "xui": "144.126.214.215:2087"
 }
