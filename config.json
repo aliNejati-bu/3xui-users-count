@@ -2,5 +2,7 @@
   "interval": 1000,
   "portForce": true,
   "appListenOn": 3232,
-  "xui": "144.126.214.215:2087"
+  "xui": "144.126.214.215:2087",
+  "user": "admin",
+  "pass": "admin"
 }

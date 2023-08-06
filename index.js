@@ -9,7 +9,7 @@ let lastStates = [];
 let axiosInstance = axios.create({baseURL: `http://${configs.xui}`});
 
 axiosInstance.post('/login',
-    {username: 'admin', password: 'admin'}
+    {username: configs.user, password: configs.pass}
 )
     .then(res => {
         if (res.data.success) {
